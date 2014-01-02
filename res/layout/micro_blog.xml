@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <!-- ListRow Left side Thumbnail image -->
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/profile_pic_border"
+            android:padding="3dip" >
+
+            <ImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="60dip"
+                android:layout_height="60dip" />
+        </LinearLayout>    
+        
+        <TextView
+            android:id="@+id/user_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="@string/loading"
+            android:textColor="#040404"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        
+
+         <ImageView
+            android:id="@+id/mark_as_spam"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dip"
+            android:src="@drawable/red_exclamation_mark" />
+       
+
+        <TextView
+            android:id="@+id/time_of_blog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_full_name"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_text"
+        android:background="@drawable/microblog_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:lineSpacingMultiplier="1.1"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:textColor="#343434"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/list_row_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

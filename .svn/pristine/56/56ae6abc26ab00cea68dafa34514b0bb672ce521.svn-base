@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > 
+     
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/image3" >
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+    
+        <EditText
+        android:id="@+id/email_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/email_shape"
+        android:typeface="sans" />
+        
+        <LinearLayout
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#a3b1b0"/>
+        
+        <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:background="@drawable/password_shape"
+        android:typeface="sans" />
+        
+        <Button
+        android:id="@+id/sign_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:background="@drawable/button_shape" /> 
+        
+        </LinearLayout>
+           
+    </LinearLayout>    
+    
+</RelativeLayout>

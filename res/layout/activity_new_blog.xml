@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > 
+     
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/image4" >
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+      android:id="@+id/header_for_blog"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:background="#F2F2F2"      
+      android:gravity="center" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:text="Create New Blog"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/header_for_blog">
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageView
+        android:id="@+id/profile_picture_new_blog"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@drawable/android_question_mark"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+               
+        <Button
+        android:id="@+id/selectimage_for_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Picture for Blog"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp" />
+        
+        <LinearLayout
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:layout_width="fill_parent"
+        android:background="#00000000"/> 
+    
+        <EditText
+        android:id="@+id/enter_blogname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:hint="Enter Blog Name"
+        android:inputType="textVisiblePassword" 
+        android:background="@drawable/email_shape"
+        android:typeface="monospace" />
+ 
+        <LinearLayout
+        android:layout_height="25dp"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:layout_width="fill_parent"
+        android:background="#00000000"/>
+        
+        <Button
+        android:id="@+id/new_blog1"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:text="Create Blog"
+        android:textStyle="bold"        
+        android:textColor="#ffffff"  
+        android:background="@drawable/sign_in_state" /> 
+        
+        <LinearLayout
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:layout_width="fill_parent"
+        android:background="#00000000"/> 
+                           
+    </LinearLayout> 
+    
+    </ScrollView>
+    
+    </RelativeLayout> 
+
+</RelativeLayout>

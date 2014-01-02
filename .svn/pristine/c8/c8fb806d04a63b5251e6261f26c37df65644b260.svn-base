@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GauchoBlog</string>
+    <string name="menu_settings">Settings</string>
+    <string name="welcome1">Powered by</string>
+    <string name="welcome2">Networking</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="title_activity_sign_in">GauchoBlog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about">GauchoBlog</string>
+
+</resources>

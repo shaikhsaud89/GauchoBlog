@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/choose_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"
+        android:textColor="#66CCFF"
+        android:typeface="serif"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/choose_option" >
+    </TextView>
+    
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"        
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radio_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:button="@drawable/image_selector_radio_button_background"
+            android:radius="5dp"
+            android:text="@string/take_photo"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:button="@drawable/image_selector_radio_button_background"            
+            android:radius="5dp"
+            android:text="@string/choose_existing_photo"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:layout_height="0.5dp"
+        android:layout_width="fill_parent"
+        android:background="#a3b1b0"/>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    
+    <Button
+        android:id="@+id/option_select_btn_ok"
+        android:padding="10dp"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok_state"
+        android:clickable="true"
+        android:text="@string/ok"
+        android:textColor="#66CCFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="0dip"
+        android:layout_weight=".005"
+        android:background="#a3b1b0"/>
+    
+    <Button
+        android:id="@+id/option_select_btn_cancel"
+        android:padding="10dp"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok_state"
+        android:clickable="true"
+        android:text="@string/cancel"
+        android:textColor="#66CCFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    </LinearLayout> 
+
+</LinearLayout>

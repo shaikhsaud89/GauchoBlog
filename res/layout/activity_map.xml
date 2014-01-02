@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="?android:attr/actionBarSize" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Normal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_type_state"
+            android:text="@string/normal" />
+
+        <Button
+            android:id="@+id/Hybrid"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_type_state"
+            android:text="@string/hybrid" />
+
+        <Button
+            android:id="@+id/Satellite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/map_type_state"
+            android:text="@string/satellite" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/My_Location"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/ic_location_on" />
+    </LinearLayout>
+
+</RelativeLayout>
